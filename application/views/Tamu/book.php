@@ -55,16 +55,17 @@
 
                 <p class="mt-3">Paybay</p>      
                 <select class="form-control" name="PayBay">
-                  <option>Bayar Di Tempat</option>
-                  <option>Transfer BANK</option>
+                  <option>DANU</option>
+                  <option>GO PI</option>
+                  <option>BU SOFI PAY</option>
                 </select>
               </div>
           </div>
-          <hr>
+          <br>
 <!-- value="<?=$data['user']->Nama;?>" readonly -->
 <!-- value="<?=$data['user']->nowa;?>" readonly -->
 
-          <button type="submit">Kirim</button>
+          <button type="submit" class="btn btn-warning">Kirim</button>
         </form>
     </div>
 

@@ -101,8 +101,12 @@ class Tamu extends CI_Controller {
 			date('His'), 
 		);
 		$this->db->insert('pemesanan', $data);
-		redirect('/Tamu/ref');
+		redirect('/Tamu/pembayaran');
 
+	}
+	public function pembayaran()
+	{
+		$this->load->view('Tamu/pembayaran');
 	}
 	public function print()
 	{
