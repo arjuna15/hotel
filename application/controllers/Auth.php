@@ -57,21 +57,6 @@ class Auth extends CI_Controller {
 		if (empty($login)) {
 			redirect('/Auth/login');
 		}
-        if ( ! function_exists('redirect_back'))
-        {
-            function redirect_back()
-            {
-                if(isset($_SERVER['HTTP_REFERER']))
-                {
-                    header('Location: '.$_SERVER['HTTP_REFERER']);
-                }
-                else
-                {
-                    header('Location: http://'.$_SERVER['SERVER_NAME']);
-                }
-                exit;
-            }
-        }
 		$_SESSION['user']=$login[0];
 		
         $this->Leving();
@@ -82,9 +67,8 @@ class Auth extends CI_Controller {
     public function Leving()
     {
         if ($_SESSION['user']->level=="tamu") {
-			redirect('/Tamu/TipeKamar');
+			redirect('/Tamu/detailTipe?id=1');
 		}
-
         if ($_SESSION['user']->level=="resepsionis") {
 			redirect('/Resp/dashboard');
 		}

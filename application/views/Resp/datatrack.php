@@ -1,7 +1,7 @@
 <?php $this->load->view('master/navresp')?>
 <div class="container">
     <div class="card mb-3">
-        <img src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8&w=1000&q=80" class="" alt="">
+    <img src="<?php echo base_url('/assets/img/hotel.jpg'); ?>" alt="" style="max-height:400px;object-fit:cover">
         <div class="card-body">
             <h5 class="card-title">Cari Data</h5>
             <p class="card-text">
